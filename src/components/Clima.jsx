@@ -8,7 +8,7 @@ const Clima = ({ clima, nombre, temperatura }) => {
           <Col sm={12} md={4} lg={4}>
             <Card className="m-1 text-center">
               <Card.Header>{nombre}</Card.Header>
-              <Card.Text>Clima: {clima.main}</Card.Text>
+              <Card.Text>Clima: {clima.description}</Card.Text>
               <Card.Text>Temperatura: {temperatura.temp}°</Card.Text>
             </Card>
           </Col>

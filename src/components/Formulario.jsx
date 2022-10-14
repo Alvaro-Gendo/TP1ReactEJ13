@@ -21,11 +21,10 @@ const Formulario = () => {
   const consultarAPI = async () => {
     try {
       const respuesta = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${pais}&appid=1fcaebff532be7caf4c874f6d9171167`
+        `https://api.openweathermap.org/data/2.5/weather?q=${pais}&appid=1fcaebff532be7caf4c874f6d9171167&units=metric&lang=sp`
       );
       const dato = await respuesta.json();
-      // console.log(dato)
-      // console.log(dato.main)
+      //console.log(dato)
       setClima(dato.weather);
       setNombre(dato.name)
       setTemperatura(dato.main)
