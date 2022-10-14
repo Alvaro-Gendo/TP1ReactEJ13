@@ -11,7 +11,7 @@ const Formulario = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (pais.trim() === "") {
-      alert("Debes comletar el campo");
+      alert("Debes completar el campo");
     } else {
       consultarAPI();
       setPais("");
@@ -24,7 +24,7 @@ const Formulario = () => {
         `https://api.openweathermap.org/data/2.5/weather?q=${pais}&appid=1fcaebff532be7caf4c874f6d9171167`
       );
       const dato = await respuesta.json();
-      console.log(dato)
+      // console.log(dato)
       // console.log(dato.main)
       setClima(dato.weather);
       setNombre(dato.name)

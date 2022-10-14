@@ -4,7 +4,7 @@ const Clima = ({ clima, nombre, temperatura }) => {
   return (
     <>
       {clima.map((clima) => (
-        <Card.Body className="mt-4" key={clima.id}>
+        <Card.Body className="mt-4" key={clima}>
           <Col sm={12} md={4} lg={4}>
             <Card className="m-1 text-center">
               <Card.Header>{nombre}</Card.Header>
